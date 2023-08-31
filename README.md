@@ -13,6 +13,10 @@ By 9sep-
 ### step 1
 Dowload or clone my project
 
+
 ### step 2
-Open terminal
-#### $ npm install
+Open terminal 
+$npm install $
+
+### step 3
+Have fun!
