@@ -14,9 +14,12 @@ By 9sep-
 Dowload or clone my project
 
 
-### step 2
-Open terminal 
-$npm install $
+### step 2 📦 Install
+
+```bash
+npm install
+```
+
 
 ### step 3
 Have fun!
