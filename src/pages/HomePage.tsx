@@ -8,6 +8,7 @@ import { setPokemonType } from "../redux/typeSlice";
 import PokemonTable from "../components/PokemonTable";
 import { Pokemon, Results, TypesAPI } from "../interface/interface";
 import SearchBar from "../components/SearchBar";
+import Footer from "../components/Footer";
 
 const HomePage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -84,6 +85,7 @@ const HomePage: React.FC = () => {
         <SearchBar />
         <PokemonTable />
       </div>
+      {/* <Footer /> */}
     </>
   );
 };

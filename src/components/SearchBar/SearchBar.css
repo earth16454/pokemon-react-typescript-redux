@@ -1,0 +1,16 @@
+.search-container {
+  margin-top: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .search-container {
+    margin-top: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-container {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}

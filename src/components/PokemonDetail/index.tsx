@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../redux/hook";
+import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import "./detail.css";
+import "./PokemonDetail.css";
 import axios from "axios";
 import { Spin, Image, Card, Typography, Row, Col, Progress } from "antd";
 import { LeftOutlined } from "@ant-design/icons";
-import { Pokemon, Ability, Types, Stats, LogoTypes } from "../interface/interface";
-import { setSelectedPokemon } from "../redux/pokemonSlice";
-import { stats_color, type_color } from "../interface/color";
+import { Pokemon, Ability, Types, Stats, LogoTypes } from "../../interface/interface";
+import { setSelectedPokemon } from "../../redux/pokemonSlice";
+import { stats_color, type_color } from "../../interface/color";
 
-import bug from "./assets/icons/bug.svg";
-import dark from "./assets/icons/dark.svg";
-import dragon from "./assets/icons/dragon.svg";
-import electric from "./assets/icons/electric.svg";
-import fairy from "./assets/icons/fairy.svg";
-import fighting from "./assets/icons/fighting.svg";
-import fire from "./assets/icons/fire.svg";
-import flying from "./assets/icons/flying.svg";
-import ghost from "./assets/icons/ghost.svg";
-import grass from "./assets/icons/grass.svg";
-import ground from "./assets/icons/ground.svg";
-import ice from "./assets/icons/ice.svg";
-import normal from "./assets/icons/normal.svg";
-import poison from "./assets/icons/poison.svg";
-import psychic from "./assets/icons/psychic.svg";
-import rock from "./assets/icons/rock.svg";
-import steel from "./assets/icons/steel.svg";
-import water from "./assets/icons/water.svg";
+import bug from "../assets/icons/bug.svg";
+import dark from "../assets/icons/dark.svg";
+import dragon from "../assets/icons/dragon.svg";
+import electric from "../assets/icons/electric.svg";
+import fairy from "../assets/icons/fairy.svg";
+import fighting from "../assets/icons/fighting.svg";
+import fire from "../assets/icons/fire.svg";
+import flying from "../assets/icons/flying.svg";
+import ghost from "../assets/icons/ghost.svg";
+import grass from "../assets/icons/grass.svg";
+import ground from "../assets/icons/ground.svg";
+import ice from "../assets/icons/ice.svg";
+import normal from "../assets/icons/normal.svg";
+import poison from "../assets/icons/poison.svg";
+import psychic from "../assets/icons/psychic.svg";
+import rock from "../assets/icons/rock.svg";
+import steel from "../assets/icons/steel.svg";
+import water from "../assets/icons/water.svg";
 
 const logo_types: LogoTypes = {
   bug: bug,
@@ -91,8 +91,12 @@ const PokemonDetail: React.FC = () => {
 
   const handlePrevious = () => {
     if (id) {
-      let sumID = parseInt(id) - 1;
-      navigate(`../details/${sumID}`);
+      if(parseInt(id) <= 1) {
+
+      } else {
+        let sumID = parseInt(id) - 1;
+        navigate(`../details/${sumID}`);
+      }
     }
   };
 
@@ -129,8 +133,8 @@ const PokemonDetail: React.FC = () => {
 
         <Row
           gutter={[
-            { sm: 12, lg: 24 },
-            { xs: 24, sm: 24, md: 24, lg: 0 },
+            { sm: 12, lg: 24, xl: 32 },
+            { xs: 24, sm: 24, md: 24, lg: 24 },
           ]}
           align="middle"
           className="pokemon-detail"
@@ -152,7 +156,7 @@ const PokemonDetail: React.FC = () => {
               <Row
                 gutter={[
                   { xs: 0, md: 8, lg: 16 },
-                  { xs: 0, md: 6, lg: 8, xl: 10 },
+                  { xs: 0, md: 6, lg: 8, xl: 8, xxl: 10 },
                 ]}
               >
                 {selectedPokemon.stats.map((stats: Stats, index: number) => {
@@ -208,10 +212,10 @@ const PokemonDetail: React.FC = () => {
                 })}
               </div>
               <div className="container-station">
-                <button className="btn-previous" onClick={handlePrevious}>
+                <button className="btn-previous" onClick={handlePrevious} disabled={id === "1"}>
                   Previous
                 </button>
-                <button className="btn-next" onClick={handleNext}>
+                <button className="btn-next" onClick={handleNext} disabled={id === "1010"}>
                   Next
                 </button>
               </div>

@@ -16,10 +16,10 @@ const Navbar = () => {
               <NavLink to="/details/1" className="nav-link">Pokemon detail</NavLink>
             </li>
             <li>
-              <NavLink to="/about" className="nav-link">About</NavLink>
+              <NavLink to="/about" className="nav-link about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className="nav-link disabled">Contact</NavLink>
+              <NavLink to="/contact" className="nav-link disabled contact">Contact</NavLink>
             </li>
           </ul>
         </div>

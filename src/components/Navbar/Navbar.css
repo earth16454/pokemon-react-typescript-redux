@@ -3,7 +3,7 @@
   display: flex;
   align-self: center;
   padding: 0.5rem 0;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .navbar > .container {
@@ -82,18 +82,21 @@
 
 @media (max-width: 576px) {
   .navbar {
-    padding: 0.35rem 0;
-    margin-bottom: 8px;
+    padding: 0.25rem 0;
   }
   .navbar .navbar-brand img {
-    width: 80px;
+    width: 100px;
   }
   
   .navbar .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .navbar .navbar-nav > li:first-child {
+    display: none;
+  }
+
+  .navbar .nav-link.about {
     display: none;
   }
 }

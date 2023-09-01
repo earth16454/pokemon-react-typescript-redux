@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
+import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <Footer/>
     </>
   );
 }

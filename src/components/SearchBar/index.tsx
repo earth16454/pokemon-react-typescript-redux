@@ -6,6 +6,7 @@ import { useAppSelector, useAppDispatch } from "../../redux/hook";
 import { Pokemon } from "../../interface/interface";
 import { setPokemonFilter } from "../../redux/filterReducer";
 import { Types } from "../../interface/interface";
+import "./SearchBar.css";
 
 const { Text } = Typography;
 const { Search } = Input;
@@ -52,10 +53,10 @@ const SearchBar: React.FC = () => {
   return (
     <>
       <Row gutter={[24, 8]} align="middle" className="search-container">
-        <Col span={24}>
+        {/* <Col span={24}>
           <Text>ข้อมูลทั้งหมด {pokemons.length}</Text><br />
           <Text>ข้อมูลปัจจุบัน {pokemonsFilter.length}</Text>
-        </Col>
+        </Col> */}
         {/* <Col xs={24} sm={12}> */}
         <Col xs={24} sm={24} md={10} lg={8}>
           <Row align="middle" gutter={[0, 16]}>
