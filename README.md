@@ -1,6 +1,8 @@
 # Pokemon app React (Typescript)
 By 9sep-
 
+Demo https://pokemon-app-9cb8b.web.app/
+
 ## Tools
 - React typescript
 - Redux
