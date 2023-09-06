@@ -121,7 +121,7 @@ const PokemonDetail: React.FC = () => {
     </div>
   ) : (
     <>
-      <div className="container">
+      <div className="container" >
         <div className="back-link">
           <Link to={"/"}>
             <button className="btn-back">

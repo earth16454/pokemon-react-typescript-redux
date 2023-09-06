@@ -1,16 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import PokemonDetail from "../components/PokemonDetail";
+import PokemonCard from "../components/PokemonCard";
 import "./pages.css";
 import Footer from "../components/Footer";
-
 const DetailPage: React.FC = () => {
   return (
     <>
       <div className="pages-container">
         <Navbar />
-        <div className="content">
-          <PokemonDetail />
+        <div className="container content">
+          <h1>Under construction...</h1>
         </div>
         <div className="pages-container-footer">
           <Footer />

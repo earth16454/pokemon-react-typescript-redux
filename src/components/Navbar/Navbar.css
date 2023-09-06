@@ -95,8 +95,4 @@
   .navbar .navbar-nav > li:first-child {
     display: none;
   }
-
-  .navbar .nav-link.about {
-    display: none;
-  }
 }

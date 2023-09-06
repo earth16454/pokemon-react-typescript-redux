@@ -1,6 +1,6 @@
 /* Pokemon Details */
 .pokemon-detail {
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .spin-loading {
@@ -241,12 +241,8 @@
   .container-station {
     margin-top: 2rem;
   }
-  .card-pokemon h1.pokemon-title {
-    /* font-size: 30px; */
-  }
   .card-pokemon h3.pokemon-base-stats-label {
     margin-top: 0.75em;
-    /* font-size: 20px; */
   }
 }
 

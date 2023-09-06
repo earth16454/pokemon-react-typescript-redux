@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
+import CardPage from './pages/CardPage';
 import Footer from './components/Footer';
 
 const router = createBrowserRouter([
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
     element: <DetailPage />,
   },
   {
-    path: "about",
-    element: <HomePage />,
+    path: "card",
+    element: <CardPage />,
   },
 ]);
 
@@ -28,7 +29,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
